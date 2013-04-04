@@ -1,0 +1,1 @@
+PS1="$bold--=--( $normal$color EEEPC2 $normal $green\u$normal$bold )-=-( $normal$green\D{%D}$normal$bold )-=-( $normal$green\t$normal$bold )-=-( $red\w$normal$bold )--=\n$normal`_git_headname`!`_git_repo_state``_git_workdir``_git_dirty``_git_dirty_stash`> "
