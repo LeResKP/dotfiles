@@ -1,4 +1,4 @@
 keycode 66 = F10
 clear Lock
-keycode 95 = Caps_Lock
+keycode 75 = Caps_Lock
 add Lock = Caps_Lock
