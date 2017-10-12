@@ -1,0 +1,6 @@
+--type-set=py=.py
+--type-set=scss=.scss
+--type-set=less=.less
+--type-add=css=.less
+--type-set=po=.po
+--type-set=xml=.xml
