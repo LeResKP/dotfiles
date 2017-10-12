@@ -1,0 +1,1 @@
+PS1=$LERESKP_BASE_PS'`_git_headname``_git_upstream_state`!`_git_repo_state``_git_workdir``_git_dirty``_git_dirty_stash`> '
