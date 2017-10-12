@@ -1,0 +1,11 @@
+if [ $TERM != 'dumb' ] # No custom prompt in vi
+then
+    normal="\[\e[0m\]"
+    bold="\[\e[1m\]"
+    green="\[\e[33m\]"
+    red="\[\e[31m\]"
+    PS1="$bold=--( $normal$green\u@\h$normal$bold )-=-( $normal$green\D{%D}$normal$bold )-=-( $normal$green\t$normal$bold )-=-( $red\w$normal$bold )--=\n$bold$normal\W \\$ $normal"
+fi
+
+# Ignore the duplicates
+export HISTCONTROL=ignoredups
