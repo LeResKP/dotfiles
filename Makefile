@@ -3,3 +3,4 @@ all:
 	if test ! -e $(HOME)/.gitshrc; then ln -s $(CURDIR)/dotgitshrc ~/.gitshrc; fi
 	if test ! -e $(HOME)/.ackrc; then ln -s $(CURDIR)/dotackrc ~/.ackrc; fi
 	if test ! -e $(HOME)/.tmux.conf; then ln -s $(CURDIR)/dottmux.conf ~/.tmux.conf; fi
+	if test ! -e $(HOME)/.xmodmaprc; then ln -s $(CURDIR)/dotxmodmaprc ~/.xmodmaprc; fi
