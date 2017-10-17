@@ -1,0 +1,22 @@
+[user]
+    name = Aurélien Matouillot
+    email = a.matouillot@gmail.com
+
+
+[alias]
+    lo = log -n 3
+    lg = log --graph --pretty=format:'%C(yellow)%d%Creset %C(cyan)%h%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=short --all
+    wip = !sh -c "echo '';git add .; git commit -a -m 'WIP'"
+    unwip = reset HEAD^
+    m = merge --no-ff
+    mf = merge --ff
+    oshow = --no-pager show --name-only --pretty="oneline" origin/master..
+    mshow = --no-pager show --name-only --pretty="oneline" master..
+    pom = push origin master
+    rom = rebase origin/master
+    riom = rebase -i origin/master
+    ds = diff --staged
+    na = commit -C HEAD --amend
+    nameo = diff --name-only  ..origin/master
+    nall = commit -a -C HEAD --amend
+    si = status -s --ignore-submodule
