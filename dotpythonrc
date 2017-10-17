@@ -1,0 +1,17 @@
+import os
+
+try :
+    import readline
+except ImportError :
+    print "Module readline not available."
+else :
+    import rlcompleter
+    readline.parse_and_bind("tab: complete")
+
+    history = os.path.expanduser('~/.python_history')
+    try :
+        readline.read_history_file(history)
+    except Exception, e :
+        print e, history
+    import atexit
+    atexit.register(lambda: readline.write_history_file(history))

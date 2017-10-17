@@ -5,3 +5,5 @@ all:
 	if test ! -e $(HOME)/.tmux.conf; then ln -s $(CURDIR)/dottmux.conf ~/.tmux.conf; fi
 	if test ! -e $(HOME)/.xmodmaprc; then ln -s $(CURDIR)/dotxmodmaprc ~/.xmodmaprc; fi
 	if test ! -e $(HOME)/.gitconfig; then ln -s $(CURDIR)/dotgitconfig ~/.gitconfig; fi
+	if test ! -e $(HOME)/.pythonrc; then ln -s $(CURDIR)/dotpythonrc ~/.pythonrc; fi
+	touch $(HOME)/.python_history

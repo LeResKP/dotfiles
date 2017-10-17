@@ -18,3 +18,7 @@ fi
 
 # Ignore the duplicates
 export HISTCONTROL=ignoredups
+
+if [ -f $HOME/.pythonrc ]; then
+    export PYTHONSTARTUP=$HOME/.pythonrc
+fi
